@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- The native website_sale address template renders the VAT input using
+         the show_vat/can_edit_vat values prepared by our controller. -->
+    <template id="website_sale_vat_fill_empty_note" inherit_id="website_sale.address">
+        <xpath expr="//input[@name='vat']" position="after">
+            <small class="form-text text-muted" t-if="show_vat and not partner_sudo.vat">
+                Se guardará en la empresa y no podrá modificarse si ya existe un NIF.
+            </small>
+        </xpath>
+    </template>
+</odoo>
