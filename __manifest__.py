@@ -1,6 +1,6 @@
 {
     "name": "Website Sale VAT Fill Empty",
-    "version": "18.0.2.0.0",
+    "version": "18.0.2.0.1",
     "summary": "Allow customers to provide a missing NIF during checkout",
     "description": """
 Website Sale VAT Fill Empty

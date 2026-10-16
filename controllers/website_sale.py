@@ -37,8 +37,8 @@ class WebsiteSale(WebsiteSaleController):
         values = super()._prepare_address_form_values(
             order_sudo,
             partner_sudo,
-            address_type,
-            use_delivery_as_billing,
+            address_type=address_type,
+            use_delivery_as_billing=use_delivery_as_billing,
             callback=callback,
             **kwargs,
         )
